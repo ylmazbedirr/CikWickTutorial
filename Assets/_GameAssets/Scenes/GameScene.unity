@@ -1712,10 +1712,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _transformMovement: {fileID: 1306280525}
-  _movementSpeed: 20
+  _movementSpeed: 40
   _movementKey: 101
   _jumpKey: 99
-  _JumpForce: 8
+  _JumpForce: 13
   _canJump: 1
   _jumpCoolDown: 0.5
   _slideKey: 113
@@ -1760,7 +1760,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1145224970}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9faffe2a051f2594a8c5170de0cd50fc, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2274,6 +2274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2008618661}
   - component: {fileID: 2008618664}
+  - component: {fileID: 2008618665}
   - component: {fileID: 2008618663}
   - component: {fileID: 2008618662}
   m_Layer: 0
@@ -2367,6 +2368,8 @@ MonoBehaviour:
   _movementKey: 101
   _jumpKey: 32
   _jumpForce: 8
+  _airMultiplier: 0.2
+  _airDrag: 0.75
   _canJump: 1
   _jumpCoolDown: 0.5
   _slideKey: 113
@@ -2377,6 +2380,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 65
   _groundDrag: 5
+--- !u!114 &2008618665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008618660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0dc469b4d43ef149b4d741f17a46369, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2085662719
 GameObject:
   m_ObjectHideFlags: 0

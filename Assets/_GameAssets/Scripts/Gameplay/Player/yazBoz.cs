@@ -69,12 +69,12 @@ public class NewMonoBehaviourScript : MonoBehaviour
         if (Input.GetKeyDown(_slideKey))
         {
             _isSliding = true;
-            Debug.Log("Player Sliding");
+
         }
         else if (Input.GetKeyDown(_movementKey))
         {
             _isSliding = false;
-            Debug.Log("Player Moving!");
+
         }
 
         else if (Input.GetKey(_jumpKey) && _canJump & IsGrounded())
